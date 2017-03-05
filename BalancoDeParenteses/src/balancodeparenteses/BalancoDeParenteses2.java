@@ -21,6 +21,7 @@ public class ProjetoDeTeste
         
     }
     
+    
     public static String conferirParenteses(String expressao)
     {
         char[] expressaoList = expressao.toCharArray();
