@@ -3,7 +3,7 @@ package balancodeparenteses;
 import java.io.IOException;
 import java.util.Stack;
 
-public class ProjetoDeTeste 
+public class BalancoDeParenteses2 
 {
     public static void main(String[] args) throws IOException
     {
