@@ -3,26 +3,25 @@ package balancodeparenteses;
 
 public class BalancoDeParenteses {
 
-    public boolean TestarParenteses(String expressao)
+    public static String TestarParenteses(String expressao)
     {
         char[] expressaoList = expressao.toCharArray(); // convertendo a expressão para uma lista de caracteres
         
         int parentesesAbertos = 0;
-        int parentesesFechados = 0;
 
         for(int i=0; i<expressaoList.length; i++)
         {
-            if(parentesesAbertos == 0 && expressaoList[i] == ')') //Se o primeiro parenteses é de fechamento
-                return false;
+            if((expressaoList[i] == ')') && (parentesesAbertos == 0))
+                return "incorrect";
             else if(expressaoList[i] == '(')
                 parentesesAbertos++;
             else if(expressaoList[i] == ')')
-                parentesesFechados++;
+                parentesesAbertos--;
         }
         
-        if(parentesesAbertos == parentesesFechados)
-            return true;
+        if(parentesesAbertos == 0)
+            return "correct";
         else
-            return false;     
+            return "incorrect";     
     } 
 }
