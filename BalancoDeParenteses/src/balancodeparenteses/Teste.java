@@ -27,7 +27,7 @@ public class Teste
         while(leitor.hasNext()) 
         {
             String expressao = leitor.next();
-            System.out.println(TestarParenteses(expressao));
+            //System.out.println(TestarParenteses(expressao));
         }        
     }
 }
